@@ -10,9 +10,10 @@
     <nav class="bg-blue-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Laravel App</h1>
+        
             <div class="space-x-4">
                 <a href="/" class="hover:text-blue-200">Home</a>
-                <a href="/about" class="hover:text-blue-200 text-blue-200">About</a>
+                <a href="/about" class="hover:text-blue-200 text-black">About</a>
                 <a href="/services" class="hover:text-blue-200">Services</a>
                 <a href="/blog" class="hover:text-blue-200">Blog</a>
                 <a href="/contact" class="hover:text-blue-200">Contact</a>

@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Laravel App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -12,7 +11,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Laravel App</h1>
             <div class="space-x-4">
-                <a href="/" class="hover:text-blue-200">Home</a>
+                <a href="/" class="hover:text-blue-200 text-black">Home</a>
                 <a href="/about" class="hover:text-blue-200">About</a>
                 <a href="/services" class="hover:text-blue-200">Services</a>
                 <a href="/blog" class="hover:text-blue-200">Blog</a>
@@ -21,7 +20,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-8">
         <div class="bg-white rounded-lg shadow-lg p-8 mb-8">

@@ -15,7 +15,7 @@
                 <a href="/about" class="hover:text-blue-200">About</a>
                 <a href="/services" class="hover:text-blue-200">Services</a>
                 <a href="/blog" class="hover:text-blue-200">Blog</a>
-                <a href="/contact" class="hover:text-blue-200 text-blue-200">Contact</a>
+                <a href="/contact" class="hover:text-blue-200 text-black">Contact</a>
                 <a href="/dashboard" class="hover:text-blue-200">Dashboard</a>
             </div>
         </div>
