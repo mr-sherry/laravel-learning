@@ -42,7 +42,9 @@
  
 
 @include('client.layouts.components.navbar')
-@yield('page-content')
+
+@yield('content')
+
  @include('client.layouts.components.footer')
 
 

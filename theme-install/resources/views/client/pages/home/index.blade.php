@@ -1,7 +1,6 @@
 @extends('client.layouts.common.app')
-@section('page-content')
 
-
+@section('content')
  <main class="main">
 
     <!-- Hero Section -->
@@ -1745,4 +1744,4 @@
 
   </main>
 
-  @endsection
+@endsection

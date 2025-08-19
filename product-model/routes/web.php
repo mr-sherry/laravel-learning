@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
+
+Auth::routes();
+
+
+Route::get('/product',[App\Http\Controllers\ProductController::class,'index'])->name('product.index');
+Route::get('/product',[App\Http\Controllers\ProductController::class,'create'])->name('product.create');
+Route::post('/product',[App\Http\Controllers\ProductController::class,'store'])->name('product.store');
+
