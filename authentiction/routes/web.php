@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SellerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,10 +47,13 @@ Route::get('/blog/blog-details', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/admin/dashboard', function () {
-    return view('pages.dashboards.admin.index');
-})->name('admin.dashboard');
 
-Route::get('/seller/dashboard', function () {
-    return view('pages.dashboards.seller.index');
-})->name('seller.dashboard');
+
+
+Route::get('/admin/dashboard', [AdminController::class, 'index'])
+    ->name('admin.dashboard')
+    ->middleware('auth');
+
+Route::get('/seller/dashboard', [SellerController::class, 'index'])
+    ->name('seller.dashboard')
+    ->middleware('auth');

@@ -38,11 +38,11 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         if ($user->role === 'admin') {
-            return redirect()->route('admin.dashboard'); // Admin dashboard route
+            return redirect()->route('admin.dashboard'); 
         } elseif ($user->role === 'seller') {
-            return redirect()->route('seller.dashboard'); // Seller dashboard route
+            return redirect()->route('seller.dashboard');
         } else {
-            return redirect('/'); // Default fallback
+            return redirect('/');
         }
     }
 }

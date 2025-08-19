@@ -7,6 +7,11 @@
     
     <link rel="icon" type="image/png" href="{{ asset('images/icons/favicon.png') }}"/>
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
@@ -22,6 +27,9 @@
     <link rel="stylesheet" href="{{ asset('vendor/perfect-scrollbar/perfect-scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/util.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
 
     @yield('page-css')
 </head>
